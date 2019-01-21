@@ -23,6 +23,8 @@ authentication provider.
 An error is now logged instead, and extraction continues after a bad line is encountered.
 - Fixed a panic in the dashboardd shutdown routine.
 - Fixed a bug where deleting a non-existent entity with sensuctl would not return an error.
+- Agents will now take proxy entity names into consideration when guarding
+against duplicate check requests.
 
 ### Changed
 - Improved logging for errors in proxy check requests.
